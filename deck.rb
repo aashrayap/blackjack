@@ -10,7 +10,7 @@ class Deck
 		numbers=  %w(A 2 3 4 5 6 7 8 9 10 J Q K)
 
 		suits.each do |suit|
-			number.each do |number|
+			numbers.each do |number|
 				@deck.push(Card.new(suit,number))
 			end
 		end
@@ -20,5 +20,4 @@ class Deck
 	def shuffle_deck
 		@deck.shuffle!
 	end
-
 end
