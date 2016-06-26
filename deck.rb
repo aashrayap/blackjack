@@ -2,6 +2,7 @@ class Deck
 	attr_accessor :deck
 	def initialize
 		@deck= []
+		create_deck
 	end
 
 	def create_deck
@@ -13,5 +14,11 @@ class Deck
 				@deck.push(Card.new(suit,number))
 			end
 		end
+		shuffle_deck
 	end
+
+	def shuffle_deck
+		@deck.shuffle!
+	end
+
 end
