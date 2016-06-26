@@ -5,3 +5,4 @@ class Blackjack
 	  # @deck= Deck.new
 	  puts "Please enter your name: "
 	  @player= Player.new(gets.chomp)
+	  
